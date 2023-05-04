@@ -10,19 +10,45 @@ GET http://localhost:3001/api/products
 
 GET http://localhost:3001/api/v1/notes
 
+
 ###
+
+
+POST http://localhost:3001/api/auth/register
+content-type: application/json
+
+{
+    "name":"ankit01",
+    "email":"ankit01@gmail.com",
+    "password":"12345678"
+}
+
+###
+
 
 POST http://localhost:3001/user
 content-type: application/json
 
 {
-    "name": "abc34",
-    "email":"db@gmail.com34",
-    "password": "123456"
+    "name": "Ankit",
+    "email":"ankitkaushik@gmail.com",
+    "password": "1011"
 
 }
 
+//to check the creditianls of the user with email and user
+### 
+POST http://localhost:3001/api/auth/login
+content-type: application/json
+
+{
+   "email":"ankitkaushik@gmail.com",
+   "password":"1011"
+}
+
+
 ###
+
 POST http://localhost:3001/product
 content-type: application/json
 
